@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #1b1b1b;
+  color: #e0e0e0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+#app {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 210px;
+  background: #202020;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.logo {
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.sidebar-nav button {
+  background: none;
+  border: none;
+  color: #b5b5b5;
+  padding: 0.75rem;
+  cursor: pointer;
+  text-align: left;
+}
+.sidebar-nav button:hover {
+  background: #303030;
+  color: #ffffff;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-tabs {
+  background: #222222;
+  padding: 0.5rem 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.top-tabs .tab {
+  cursor: pointer;
+  color: #a0a0a0;
+}
+
+.top-tabs .tab.active {
+  color: #ffffff;
+  border-bottom: 2px solid #3b3b3b;
+}
+
+.banner img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.play-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+}
+
+.play-bar select {
+  padding: 0.5rem;
+  background: #333333;
+  color: #ffffff;
+  border: none;
+}
+
+#play-button {
+  padding: 0.5rem 1.5rem;
+  background: #27b342;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: filter 0.2s;
+}
+
+#play-button:hover {
+  filter: brightness(1.1);
+}
+
+/* Pages */
+.page {
+  display: none;
+  padding: 1rem;
+}
+
+.page.active {
+  display: block;
+}
